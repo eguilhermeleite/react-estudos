@@ -1,9 +1,14 @@
 //components
-
+import React from "react";
+import TabelaBody from "./components/TabelaBody";
+import TabelaHead from "./components/TabelaHead";
 
 const App = () => (
-  <div className="App">
-    <h1>Tabela de Livros</h1>
+  <div>
+    <table className="tabela">
+      <TabelaHead />
+      <TabelaBody />
+    </table>
   </div>
 );
 
