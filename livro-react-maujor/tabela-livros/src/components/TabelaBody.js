@@ -1,16 +1,18 @@
 
 
-const TabelaBody = () => (
+const TabelaBody = props => (
 
-    <tbody>
-        <tr>
-            <td>978-85-7522-632</td>
-            <td>CSS Grid Layout</td>
-            <td>Maurício Samy Silva</td>
-            <td>
-                <button className='botao remover'>Remover</button>
-            </td>
-        </tr>
+    <tbody className="tdbody">
+        {props.livros.map((livro, index) => (
+            <tr key={livro.id}>
+                <td className="text-center">{livro.id}</td>
+                <td className="text-center">{livro.titulo}</td>
+                <td className="text-center">{livro.autor}</td>
+                <td>
+                    <button type="button" class="ml-3 btn btn-warning">Remover</button>
+                </td>
+            </tr>
+        ))}
     </tbody>
 
 );

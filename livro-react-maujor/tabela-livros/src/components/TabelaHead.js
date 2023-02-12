@@ -2,14 +2,14 @@ import React from "react";
 
 const TabelaHead = () => (
 
-    <thead>
+    <thead className='thead-color thhead'>
         <tr>
-            <th colSpan="4">Tabela de Livros</th>
+            <th colSpan="4" className="text-center lead text-dark thhead">Tabela de Livros</th>
         </tr>
         <tr>
-            <th>ISBN</th>
-            <th>Título</th>
-            <th>Autor</th>
+            <th className="lead text-center text-dark">ISBN</th>
+            <th className="lead text-center text-dark">Título</th>
+            <th className="lead text-center text-dark">Autor</th>
             <th></th>
         </tr>
     </thead>
