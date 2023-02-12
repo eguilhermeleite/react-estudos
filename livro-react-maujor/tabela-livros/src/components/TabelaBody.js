@@ -1,15 +1,15 @@
 
 
-const TabelaBody = props => (
+const TabelaBody = (props) => (
 
-    <tbody className="tdbody">
+    <tbody>
         {props.livros.map((livro, index) => (
             <tr key={livro.id}>
-                <td className="text-center">{livro.id}</td>
-                <td className="text-center">{livro.titulo}</td>
-                <td className="text-center">{livro.autor}</td>
+                <td >{livro.id}</td>
+                <td >{livro.titulo}</td>
+                <td >{livro.autor}</td>
                 <td>
-                    <button type="button" class="ml-3 btn btn-warning">Remover</button>
+                    <button id={livro.id} className="botao remover" onClick={()=> props.removerLinha(livro.id)}>Remover</button>
                 </td>
             </tr>
         ))}

@@ -1,15 +1,37 @@
 import React from "react";
 
-const TabelaHead = () => (
+const TabelaHead = (props) => (
 
-    <thead className='thead-color thhead'>
+    <thead>
         <tr>
-            <th colSpan="4" className="text-center lead text-dark thhead">Tabela de Livros</th>
+            <th colSpan="4">Tabela de Livros em React</th>
         </tr>
         <tr>
-            <th className="lead text-center text-dark">ISBN</th>
-            <th className="lead text-center text-dark">Título</th>
-            <th className="lead text-center text-dark">Autor</th>
+            <th>ISBN</th>
+            <th>Título
+                <div className="container-setinhas">
+                    <div onClick={() => props.ordenarDecrescente()}>
+                        &#129093;
+                    </div>
+
+                    <div onClick={() => props.ordenarCrescente()}>
+                        &#129095;
+                    </div>
+                </div>
+            </th>
+            <th>Autor
+                <div className="container-setinhas">
+                    <div onClick={() => props.ordenarDecrescenteAutor()}>
+                        &#129093;
+                    </div>
+
+                    <div onClick={() => props.ordenarCrescenteAutor()}>
+                        &#129095;
+                    </div>
+                </div>
+            </th>
+
+
             <th></th>
         </tr>
     </thead>

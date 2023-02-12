@@ -1,9 +1,9 @@
 
-const TabelaFoot = () => (
+const TabelaFoot = (props) => (
 
-    <tfoot className="tfoot-color">
+    <tfoot>
         <tr>
-            <th colSpan="4" className="text-dark text-center font-weight-light">Developed by Edvaldo Leite&#174;</th>
+            <td colSpan="4">Total de Livros: {props.qdeLivros}</td>
         </tr>
     </tfoot>
 
