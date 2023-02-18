@@ -3,13 +3,13 @@
 const TabelaBody = (props) => (
 
     <tbody>
-        {props.livros.map((livro, index) => (
-            <tr key={livro.id}>
-                <td >{livro.id}</td>
-                <td >{livro.titulo}</td>
-                <td >{livro.autor}</td>
+        {props.livros.map((nomeQualquer) => (
+            <tr key={nomeQualquer.id}>
+                <td >{nomeQualquer.id}</td>
+                <td >{nomeQualquer.titulo}</td>
+                <td >{nomeQualquer.autor}</td>
                 <td>
-                    <button id={livro.id} className="botao remover" onClick={()=> props.removerLinha(livro.id)}>Remover</button>
+                    <button id={nomeQualquer.id} className="botao remover" onClick={()=> props.removerLinha(nomeQualquer.id)}>Remover</button>
                 </td>
             </tr>
         ))}

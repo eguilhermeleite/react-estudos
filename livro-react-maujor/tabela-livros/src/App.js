@@ -11,14 +11,19 @@ class App extends Component {
     livros: []
   };
 
-  //acessa a pasta api em public e carrega o json para o state livros
+  
   componentDidMount() {
-    fetch("/api/livros.json")
+    //acessa a pasta /public/api e carrega o json para o state livros
+    fetch("/api/listBooks.json")
+    //content negociation
       .then(response => response.json())
+      //setState de livros 
       .then(livros => this.setState({ livros }))
+      //captura o erro e imprime no console
       .catch(function (error) {
         console.log("Erro na requisição");
       })
+      //captura o sucesso e imprime no console
       .finally(function () {
         console.log("Carregado JSON com sucesso");
       });
