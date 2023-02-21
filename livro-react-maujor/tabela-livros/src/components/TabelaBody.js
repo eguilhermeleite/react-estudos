@@ -3,6 +3,7 @@
 const TabelaBody = (props) => (
 
     <tbody>
+        {/* map funciona como um loop */}
         {props.livros.map((nomeQualquer) => (
             <tr key={nomeQualquer.id}>
                 <td >{nomeQualquer.id}</td>
