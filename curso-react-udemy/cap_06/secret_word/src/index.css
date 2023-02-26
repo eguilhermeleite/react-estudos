@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Golos Text', sans-serif;
+  background: linear-gradient(225deg,rgb(6, 20, 86) 10%, rgb(2, 37, 113) 100%);
+  color: #fff;
+}
+
+button{
+  background: #1646a0;
+  color: #fff;
+  padding: 0 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover{
+  background: #093280;
+}

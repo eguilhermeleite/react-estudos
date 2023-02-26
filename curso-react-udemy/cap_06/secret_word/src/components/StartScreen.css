@@ -1,0 +1,15 @@
+.start h1{
+    font-size: 5em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-family: 'Cinzel', serif;
+    color: #cecece;
+}
+
+.start p{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    /*color:#ffff00;*/
+    color: rgb(251, 255, 34);
+}
+
