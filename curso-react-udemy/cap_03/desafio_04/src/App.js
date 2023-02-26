@@ -3,6 +3,7 @@ import Body from './components/Body';
 import Foot from './components/Foot';
 import Header from './components/Header';
 
+
 let person = [
   { id: 1, name: "Godofredo Pereira", age: 17, profession: "Pintor"},
   { id: 2, name: "Marindalva da Silva", age: 43, profession: "Enfermeira"},
@@ -13,6 +14,7 @@ let person = [
 ]
 
 const App = () => (
+  
   <div className='container'>
     <h1>Desafio 04</h1>
     <table className="table table-striped mt-5">
@@ -25,3 +27,4 @@ const App = () => (
 )
 
 export default App;
+
