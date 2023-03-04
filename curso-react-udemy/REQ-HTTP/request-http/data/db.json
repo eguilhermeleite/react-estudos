@@ -1,0 +1,19 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "Mouse sem fio",
+            "price": 89.90
+        },
+        {
+            "id": 2,
+            "name": "Notebook Samsung",
+            "price": 3590.60
+        },
+        {
+            "id": 3,
+            "name": "Impressora HP",
+            "price": 990.80
+        }
+    ]
+}
