@@ -24,7 +24,7 @@ function App() {
 
 
   return (
-    <div className="container">
+    <div className="container pt-3">
       <h1>Lista de produtos</h1>
       <Table products={products} />
     </div>
