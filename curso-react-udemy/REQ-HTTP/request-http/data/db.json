@@ -1,5 +1,5 @@
 {
-    "products":[
+    "products": [
         {
             "id": 1,
             "name": "Mouse sem fio",
@@ -8,12 +8,17 @@
         {
             "id": 2,
             "name": "Notebook Samsung",
-            "price": 3590.60
+            "price": 3590.00
         },
         {
             "id": 3,
             "name": "Impressora HP",
-            "price": 990.80
+            "price": 899.90
+        },
+        {
+            "id": 4,
+            "name": "Notebook HP",
+            "price": 4890.00
         }
     ]
 }
